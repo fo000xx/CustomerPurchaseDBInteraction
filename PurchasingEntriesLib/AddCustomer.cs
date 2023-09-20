@@ -2,10 +2,21 @@
 {
     public class AddCustomer
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string EmailAddress { get; set; }
+        private string FirstName { get; set; }
+        private string LastName { get; set; }
+        private string EmailAddress { get; set; }
         
-        string 
+        public void GetFirstName()
+        {
+            FirstName = Console.ReadLine();
+        }
+        public void GetLastName()
+        {
+            LastName = Console.ReadLine();
+        }
+        public void GetEmail()
+        {
+            EmailAddress = Console.ReadLine();
+        }
     }
 }

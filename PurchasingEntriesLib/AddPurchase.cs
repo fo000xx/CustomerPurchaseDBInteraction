@@ -2,9 +2,18 @@
 {
     public class AddPurchase
     {
-        public int InitialFunc(int x, int y)
+        private string ItemName { get; set; }
+        private string Cost { get; set; }
+
+        public void GetItemName()
         {
-            return x + y;
+            ItemName = Console.ReadLine();
         }
+
+        public void GetCost()
+        {
+            Cost =  Console.ReadLine();
+        }
+
     }
 }
