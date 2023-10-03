@@ -1,6 +1,4 @@
-﻿using System;
-using System.Runtime.CompilerServices;
-using PurchasingEntriesLib;
+﻿using PurchasingEntriesLib.Models;
 
 namespace ConsoleTesting
 {
@@ -10,7 +8,7 @@ namespace ConsoleTesting
         {
             Console.WriteLine("Please enter the following details of the customer");
 
-            var customer = new AddCustomer();
+            var customer = new CustomerPurchase();
             Console.Write("First Name: ");
             customer.GetFirstName();
             Console.Write("Last Name: ");
@@ -19,12 +17,11 @@ namespace ConsoleTesting
             customer.GetEmail();
 
             Console.WriteLine("Please enter the following details of the purchase");
-            
-            var purchase = new AddPurchase();
+
             Console.Write("Item: ");
-            purchase.GetItemName();
+            customer.GetItemName();
             Console.Write("Cost: ");
-            purchase.GetCost();
+            customer.GetCost();
 
             Console.WriteLine(/*Details that have just been entered for confirmation*/);
             Console.WriteLine("Your entry has been received. Thank You.");
